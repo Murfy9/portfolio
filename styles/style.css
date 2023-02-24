@@ -1,14 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
 
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22d4fd;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+
+  --peso-pequeno: 400;
+  --peso-grande: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #000000;
+  background-color: var(--cor-primaria);
   box-sizing: border-box;
-  color: #f6f6f6;
+  color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -21,10 +33,10 @@ body {
 }
 
 .cabecalho__menu__link {
-  color: #22d4fd;
-  font-family: "Montserrat", sans-serif;
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
-  font-weight: 600;
+  font-weight: var(--peso-grande);
   text-decoration: none;
 }
 
@@ -44,21 +56,21 @@ body {
 }
 
 .conteudo__principal__titulo {
-  font-family: "Krona One", sans-serif;
+  font-family: var(--fonte-primaria);
   font-size: 36px;
 }
 
 .conteudo__principal__titulo-destaque {
-  color: #22d4fd;
+  color: var(--cor-terciaria);
 }
 
 .conteudo__principal__texto {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
 }
 
 .conteudo__principal__texto a {
-  color: #22d4fd;
+  color: var(--cor-terciaria);
   text-decoration: none;
 }
 
@@ -71,8 +83,8 @@ body {
 }
 
 .conteudo__links__subtitulo {
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
+  font-family: var(--fonte-primaria);
+  font-weight: var(--peso-pequeno);
   font-size: 24px;
 }
 
@@ -80,12 +92,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
-  border: 2px solid #22d4fd;
+  border: 2px solid var(--cor-terciaria);
   border-radius: 8px;
-  color: #f6f6f6;
-  font-family: "Montserrat", sans-serif;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
-  font-weight: 600;
+  font-weight: var(--peso-grande);
   padding: 21.5px 0;
   text-align: center;
   text-decoration: none;
@@ -103,11 +115,11 @@ body {
 }
 
 .rodape {
-  background-color: #22d4fd;
-  color: #000000;
-  font-family: "Montserrat", sans-serif;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
-  font-weight: 400;
+  font-weight: var(--peso-pequeno);
   padding: 24px;
   text-align: center;
 }
