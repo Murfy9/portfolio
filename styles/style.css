@@ -25,7 +25,7 @@ body {
 }
 
 .cabecalho {
-  padding: 2% 0 0 8%;
+  padding: 2% 0 0 15%;
 }
 
 .cabecalho__menu {
@@ -45,8 +45,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 82px;
 
-  padding: 8%;
+  padding: 5% 15%;
 }
 
 .conteudo__principal {
@@ -110,7 +111,6 @@ body {
 }
 
 .conteudo__imagem {
-  padding-bottom: 24.5%;
   width: 50%;
 }
 
@@ -122,4 +122,22 @@ body {
   font-weight: var(--peso-pequeno);
   padding: 24px;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .cabecalho__menu {
+    justify-content: center;
+  }
+  .conteudo {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .conteudo__principal {
+    width: auto;
+  }
 }
