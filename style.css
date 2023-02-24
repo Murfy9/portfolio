@@ -71,6 +71,10 @@ body {
   width: 378px;
 }
 
+.conteudo__links__link:hover {
+  background-color: #272727;
+}
+
 .conteudo__imagem {
   margin-left: 48px;
   width: 488px;
