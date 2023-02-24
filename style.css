@@ -43,20 +43,32 @@ body {
 
 .conteudo__links {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
   justify-content: space-between;
 }
 
+.conteudo__links__subtitulo {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
 .conteudo__links__link {
-  background-color: #22d4fd;
-  border-radius: 16px;
-  color: #000000;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid #22d4fd;
+  border-radius: 8px;
+  color: #f6f6f6;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 600;
   padding: 21.5px 0;
   text-align: center;
   text-decoration: none;
-  width: 220px;
+  width: 378px;
 }
 
 .conteudo__imagem {
